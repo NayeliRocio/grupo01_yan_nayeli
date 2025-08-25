@@ -1,12 +1,12 @@
-:: MANUAL PARA IMPLEMENTAR LA BASE DE DATOS SQL SERVER EN CODESPACE
+# MANUAL PARA IMPLEMENTAR LA BASE DE DATOS SQL SERVER EN CODESPACE
 
-:: 1. Ejecutar SQL Server en Docker
+# 1. Ejecutar SQL Server en Docker
 docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=DockerPass123" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest
 
-:: 2. Conectar con la extensión SQL Server (MSSQL)
-::    Servidor: localhost,1433
-::    Usuario: sa
-::    Contraseña: DockerPass123
+#2. Conectar con la extensión SQL Server (MSSQL)
+   Servidor: localhost,1433
+   Usuario: sa
+    Contraseña: DockerPass123
 
 :: 3. Crear base de datos principal
 sqlcmd -S localhost -U sa -P DockerPass123
