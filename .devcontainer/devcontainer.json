@@ -1,0 +1,16 @@
+{
+  "name": "SQL Server Dev Container",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "sqlserver",
+  "workspaceFolder": "/workspace",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-mssql.mssql"
+      ]
+    }
+  },
+
+  "postCreateCommand": "echo '🚀 Motor SQL Server levantado en Codespace (puerto 1433)'"
+}
